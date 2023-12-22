@@ -1,0 +1,54 @@
+:root {
+    --light: #fff;
+    --dark: #222;
+    --text: fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    border: none;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.navbar {
+    padding-left: 10px;
+}
+
+body {
+    background-color: var(--theme);
+    color: var(--text);
+}
+
+a:link, a:visited, a:active {
+    color: var(--text) !important;
+}
+
+a:hover, .nav-link:hover, .active:hover  {
+    color: #40E0D0 !important;
+}
+
+@media (max-width: 978px) {
+    .py-5 {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+          scroll-behavior: smooth;
+    }
+}

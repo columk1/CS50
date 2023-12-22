@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block main %}
+    <h1>Privacy and Security</h1>
+    <br>
+        <form action="/settings" method="post">
+            <div class="mb-3">
+                <input style="display: none" type="password" name="disable-chrome-autofill"/>
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="password" name="password" placeholder="Current Password" type="text">
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" class="form-control mx-auto w-auto" id="new_password" name="new_password" placeholder="New Password" type="password">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="new_password" name="new_password_confirmation" placeholder="Confirm New Password" type="password">
+            </div>
+            <button class="btn btn-primary" type="submit">Update Password</button>
+        </form>
+{% endblock %}

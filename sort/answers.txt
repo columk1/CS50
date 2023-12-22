@@ -1,0 +1,10 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It sorts the sorted list significantly faster than the random list. This identifies Bubble sort since it has a best complexity of n and a worst complexity of O(n^n).
+
+sort2 uses: Merge Sort
+
+How do you know?: It takes a similar amount of time regardless of what order the lists are in. The larger lists don't slow it down as much indicating a time complexity of O(n log n), not O(n^n) like the others.
+sort3 uses: Selection sort
+
+How do you know?: It takes the same time regardless of what order the lists. The best and worst complexity are equivalent. It is slowed down more by larger lists than the merge sort due to its O(n^n) time complexity.
